@@ -1,0 +1,6 @@
+SELECT Car.id 
+FROM Car
+INNER JOIN Owner
+ON Car.owner_id=Owner.id
+WHERE Owner.gender=0
+AND Owner.age>21;
