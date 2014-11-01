@@ -9,7 +9,9 @@ def prob1():
     INNER JOIN Owner\n \
     ON Car.owner_id=Owner.id \n \
     WHERE Owner.gender=0 \n \
-    AND Owner.age>21; ")
+    AND Owner.age>21; \n \
+    \n \
+    http://127.0.0.1:5000/prob2")
 
 @app.route('/prob2')
 def prob2():
@@ -35,7 +37,9 @@ def prob2():
     for i in range(2,N): \n \
         nums = filter(lambda x: x==i or x % i, nums) #filter out those that are divisible \n \
 \n \
-    print nums")
+    print nums \n \
+    \n \
+    http://127.0.0.1:5000/prob1")
 
 if __name__ == '__main__':
     app.run()
